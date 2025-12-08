@@ -1,0 +1,84 @@
+---
+import { Button } from "@/components/ui/button";
+import { FileText, GraduationCap, MessageCircle } from "lucide-react";
+---
+
+<section class="py-12 md:py-16 lg:py-20">
+  <div class="container">
+    <div class="text-center mb-10 md:mb-12">
+      <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">
+        Everything You Need to Get Started
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+      <!-- Card 1 -->
+      <div
+        class="flex flex-col items-center text-center p-6 rounded-xl border bg-white shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div class="mb-4 p-3 rounded-full bg-primary/10 text-primary">
+          <FileText className="h-8 w-8" />
+        </div>
+        <h3 class="text-xl font-bold mb-2">The SCI Specification</h3>
+        <p class="text-muted-foreground mb-6 flex-grow">
+          Access the complete ISO/IEC 21031:2024 standard with technical
+          methodology and implementation guidance
+        </p>
+        <a
+          href="https://sci.greensoftware.foundation"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full"
+        >
+          <Button className="w-full"> Read the Spec </Button>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="flex flex-col items-center text-center p-6 rounded-xl border bg-white shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div class="mb-4 p-3 rounded-full bg-primary/10 text-primary">
+          <GraduationCap className="h-8 w-8" />
+        </div>
+        <h3 class="text-xl font-bold mb-2">Take the SCI Course</h3>
+        <p class="text-muted-foreground mb-6 flex-grow">
+          Master the SCI methodology step-by-step with our dedicated training
+          launching Q4 2025
+        </p>
+        <a
+          href="https://movement.greensoftware.foundation/collections/2996409"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full"
+        >
+          <Button className="w-full"> Take the SCI Course </Button>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="flex flex-col items-center text-center p-6 rounded-xl border bg-white shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div class="mb-4 p-3 rounded-full bg-primary/10 text-primary">
+          <MessageCircle className="h-8 w-8" />
+        </div>
+        <h3 class="text-xl font-bold mb-2">Ask Questions</h3>
+        <p class="text-muted-foreground mb-6 flex-grow">
+          Connect with the SCI community, get implementation help, and share
+          your experiences
+        </p>
+        <a
+          href="https://github.com/Green-Software-Foundation/sci/discussions"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full"
+        >
+          <Button variant="primary" className="w-full">
+            Join the Discussion
+          </Button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

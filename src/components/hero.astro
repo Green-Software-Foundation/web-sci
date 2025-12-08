@@ -1,0 +1,63 @@
+---
+import { Button } from "@/components/ui/button";
+---
+
+<section id="overview" class="py-10">
+  <div class="container">
+    <div
+      class="grid grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16 lg:grid-cols-2 lg:items-center"
+    >
+      <div>
+        <h1 class="text-3xl font-extrabold md:text-4xl lg:text-5xl">
+          Measure What Matters:
+          <span class="text-primary">Software's Carbon Impact</span>
+        </h1>
+        <h6 class="mt-3 text-2xl font-bold text-black md:mt-4">
+          The global standard for calculating and reducing the carbon emissions of your software
+        </h6>
+        <p class="mt-5 text-lg font-normal md:mt-6 md:text-xl lg:text-2xl">
+          Every software application has a carbon footprint through the energy it consumes and the hardware it requires. The Software Carbon Intensity (SCI) specification provides the first ISO-accredited methodology to measure this impact as a score. Unlike carbon offsets, SCI focuses on actual emission reductions—empowering developers, architects, and organizations to make informed decisions that create real environmental change.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-4 md:mt-8">
+          <Button>
+            <a
+              href="https://movement.greensoftware.foundation/collections/2996409"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Take SCI Course
+            </a>
+          </Button>
+          <Button variant="outline">
+            <a
+              href="https://sci.greensoftware.foundation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read the Specification
+            </a>
+          </Button>
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <img
+          src="/assets/hero-illustration.svg"
+          class="shrink-0 object-cover"
+        />
+      </div>
+    </div>
+    <div class="mt-10 hidden lg:flex lg:items-center lg:justify-center">
+      <canvas id="hero-decor" style="width: 36px; height: 70px;"></canvas>
+    </div>
+  </div>
+</section>
+<script>
+  import { DotLottie } from "@lottiefiles/dotlottie-web";
+
+  const dotLottie = new DotLottie({
+    autoplay: true,
+    loop: true,
+    canvas: document.querySelector("#hero-decor") as HTMLCanvasElement,
+    src: "/assets/hero-decor.lottie",
+  });
+</script>
