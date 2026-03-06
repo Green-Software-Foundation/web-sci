@@ -43,14 +43,6 @@ const stories = [
     link: "https://news.microsoft.com/de-ch/carbon-aware-computing-whitepaper/",
     cta: "Read Whitepaper",
     thumbnail: "/assets/logos/ubs-microsoft.svg"
-  },
-  {
-    title: "Embedding SCI in Azure Architecture",
-    organization: "Microsoft",
-    description: "Microsoft integrated SCI into the Azure Well-Architected Framework, providing sustainability guidance and measurement tools for Azure customers to design carbon-efficient workloads.",
-    link: "https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-design-methodology",
-    cta: "View Framework",
-    thumbnail: "/assets/logos/microsoft.svg"
   }
 ];
 
